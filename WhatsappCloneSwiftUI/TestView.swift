@@ -1,15 +1,16 @@
-//
-//  TestView.swift
-//  WhatsappCloneSwiftUI
-//
-//  Created by Bilgehan KAYA on 5.06.2021.
-//
-
 import SwiftUI
 
 struct TestView: View {
+    @State var x = true
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            if x {
+                Text("X True")
+            }
+            else {
+                Text("X False")
+            }
+        }
     }
 }
 
